@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+header {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input,
+form button {
+  border: none;
+  padding: 5px 5px;
+  font-size: 18px;
+  border-bottom: black;
+}
+
+form input[type="text"] {
+  width: 250px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-right: 10px;
+}
+
+form input[type="number"] {
+  width: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-right: 10px;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  cursor: pointer;
+  background-color: #4a706c;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div.todo {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+section p {
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: rgba(237, 221, 212, 0.7);
+}
+
+section p.todo-text {
+  width: 50%;
+  text-align: center;
+  margin-right: 5px;
+}
+
+section p.todo-date {
+  width: 20%;
+  text-align: center;
+}
+
+section button {
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+}
+
+section button.complete {
+  background-color: #197278;
+}
+
+section button.trash {
+  background-color: #C44536;
+}
+
+.done {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

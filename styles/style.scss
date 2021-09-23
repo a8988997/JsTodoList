@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i{
+  pointer-events: none;
+}
+
+body {
+  // background: linear-gradient(90deg, #52ACFF, #FFE32C );
+}
+header {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 40px;
+  }
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  input,
+  button {
+    border: none;
+    padding: 5px 5px;
+    font-size: 18px;
+    border-bottom: black;
+  }
+
+  input[type="text"] {
+    width: 250px;
+    text-align: center;
+    border-bottom:1px solid black;
+    margin-right: 10px;
+    
+  }
+  input[type="number"] {
+    width: 50px;
+    text-align: center;
+    border-bottom:1px solid black;
+    margin-right: 10px;
+    
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  button{
+      cursor: pointer;
+      background-color: #4a706c;
+      color: whitesmoke;
+      padding: 5px;
+      border-radius: 10%;
+
+  }
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div.todo{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.1s ease;
+    
+  }
+  p{
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: rgba(237, 221, 212,0.7);
+    
+  }
+  p.todo-text{
+    width: 50%;
+    text-align: center;
+    margin-right: 5px;
+    
+  }
+  p.todo-date{
+    width: 20%;
+    text-align: center;
+    
+  }
+  button{
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: white;
+  }
+  button.complete{
+    background-color: #197278;
+    
+  }
+  button.trash{
+    background-color:#C44536;
+    
+  }
+}
+.done{
+  text-decoration: line-through;
+  text-decoration-thickness:2px ;
+}
+@keyframes scaleUp{
+  from{
+      transform: scale(0);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+@keyframes scaleDown{
+  to {
+      transform: scale(0);
+  }
+}
